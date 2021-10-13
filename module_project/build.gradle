@@ -1,0 +1,17 @@
+apply from: "../module.build.gradle"
+
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.tfh.project"
+        }
+    }
+    //统一资源前缀，规范资源引用
+    resourcePrefix "project_"
+}
+
+dependencies {
+    //组件依赖库
+    api project(':library_common')
+}

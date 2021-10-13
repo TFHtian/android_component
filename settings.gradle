@@ -1,0 +1,10 @@
+include ':module_mine'
+include ':module_project'
+include ':module_square'
+include ':module_auth'
+include ':module_home'
+include ':module_main'
+include ':library_common'
+include ':library_base'
+include ':app'
+rootProject.name = "AndroidComponent"

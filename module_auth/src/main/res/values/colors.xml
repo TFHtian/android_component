@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="auth_color_scroll_mask">#80000000</color>
+    <color name="auth_color_45_white">#45FFFFFF</color>
+    <color name="auth_color_333333">#333333</color>
+</resources>

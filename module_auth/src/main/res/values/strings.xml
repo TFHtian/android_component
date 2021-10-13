@@ -1,0 +1,15 @@
+<resources>
+    <string name="auth_app_name">module_auth</string>
+
+    <string name="auth_top_title">Play Android</string>
+    <string name="auth_login">登录</string>
+    <string name="auth_person_register">用户注册</string>
+    <string name="auth_visitor">游客登录</string>
+    <string name="auth_register">注册</string>
+    <string name="auth_account">账号</string>
+    <string name="auth_password">密码</string>
+    <string name="auth_confirm_password">确认密码</string>
+    <string name="auth_to_login">已有账号？去登录</string>
+    <string name="auth_password_un_agreement">两次密码输入不一致</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="BaseTheme" parent="QMUI.Compat.NoActionBar" tools:ignore="ResourceName">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- App theme -->
+    <style name="AppTheme" parent="BaseTheme" tools:ignore="ResourceName">
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/common_default_animation</item>
+    </style>
+
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar" tools:ignore="ResourceName">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <!-- 默认Activity跳转动画 -->
+    <style name="common_default_animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/common_right_in_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/common_right_in_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/common_right_out_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/common_right_out_exit</item>
+    </style>
+
+</resources>

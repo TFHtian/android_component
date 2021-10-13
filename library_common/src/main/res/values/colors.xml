@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_black">#FF000000</color>
+    <color name="common_white">#FFFFFFFF</color>
+    <color name="common_gray_dark">#ADADAD</color>
+    <color name="common_color_theme">#120B1A</color>
+    <color name="common_color_default_bg">#FFF3F3F3</color>
+    <color name="common_color_default_dark">#424242</color>
+</resources>

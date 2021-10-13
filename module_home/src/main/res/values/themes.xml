@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="HomeSearchBarStyle" parent="MaterialSearchBarLight">
+        <item name="mt_searchBarColor">@color/common_color_default_bg</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/base_black</item>
+        <item name="mt_searchIconTint">@color/base_black</item>
+        <item name="mt_clearIconTint">@color/base_black</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColor</item>
+        <item name="mt_backIconTint">@color/base_black</item>
+        <item name="mt_textColor">@color/base_black</item>
+        <item name="mt_hintColor">@color/home_color_search_hint</item>
+        <item name="mt_placeholderColor">@color/home_color_search_hint</item>
+        <item name="mt_backIconDrawable">@drawable/common_ic_back_black_24dp</item>
+        <item name="mt_hint">@string/home_search_hint</item>
+    </style>
+
+</resources>

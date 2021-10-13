@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        consumerProguardFiles "consumer-rules.pro"
+
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+
+    }
+
+    sourceSets {
+        main {
+            //jniLibs.srcDirs = ['libs']
+            if (isBuildModule.toBoolean()) {
+
+            } else {
+                resources {
+                    exclude 'src/debug/*'
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    resourcePrefix "common_"
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    api project(':library_base')
+    api rootProject.ext.dependencies["arouter_api"]
+    api rootProject.ext.dependencies["arouter_compiler"]
+    api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["glide-compiler"]
+    api rootProject.ext.dependencies["glide-transfer"]
+    api rootProject.ext.dependencies["autosize"]
+    api rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    api rootProject.ext.dependencies["loadsir"]
+    api rootProject.ext.dependencies["customactivityoncrash"]
+    api rootProject.ext.dependencies["qmui"]
+    api rootProject.ext.dependencies["annotation"]
+    api rootProject.ext.dependencies["eventbus"]
+    api rootProject.ext.dependencies["Android-SpinKit"]
+    api rootProject.ext.dependencies["titlebar"]
+    api rootProject.ext.dependencies["rxpermissions"]
+    api rootProject.ext.dependencies["refresh-layout"]
+    api rootProject.ext.dependencies["refresh-header"]
+    api rootProject.ext.dependencies["refresh-footer"]
+    api rootProject.ext.dependencies["refresh-footer"]
+    api rootProject.ext.dependencies["BackgroundLibrary"]
+    api rootProject.ext.dependencies["androidanimations"]
+    api rootProject.ext.dependencies["lottie"]
+    api rootProject.ext.dependencies["matisse"]
+    api rootProject.ext.dependencies["ConsecutiveScroller"]
+    api rootProject.ext.dependencies["pager-bottom"]
+    api rootProject.ext.dependencies["FlycoTabLayout"]
+    api rootProject.ext.dependencies["searchBarView"]
+    api rootProject.ext.dependencies["BannerViewPager"]
+    api rootProject.ext.dependencies["rxbinding"]
+}

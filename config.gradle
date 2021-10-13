@@ -1,0 +1,106 @@
+ext {
+
+    //android 开发版本
+    android = [
+            compileSdkVersion      : 30,
+            buildToolsVersion        : '30.0.3',
+            minSdkVersion            : 21,
+            targetSdkVersion         : 29,
+            applicationId               : "com.tfh.android_component",
+            versionCode                : 100,
+            versionName               : "1.0.0",
+    ]
+
+    //androidx支持库配置
+    androidx = [
+            "androidx-appcompat"                          : "androidx.appcompat:appcompat:1.3.0",
+            "androidx.lifecycle"                               : "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            "androidx.constraintlayout"                   : "androidx.constraintlayout:constraintlayout:2.0.4",
+            "android.material"                                : "com.google.android.material:material:1.4.0",
+            "multidex"                                           : 'androidx.multidex:multidex:2.0.1',
+            'kotlin_lib'                                           : "org.jetbrains.kotlin:kotlin-stdlib:1.3.72",
+            'kotlin_core'                                         : "androidx.core:core-ktx:1.3.2",
+            "junit"                                                 : "junit:junit:4.13.2",
+            "androidx.test.ext-junit"                       : "androidx.test.ext:junit:1.1.3",
+            "androidx.test.espresso:espresso-core"  : "androidx.test.espresso:espresso-core:3.4.0",
+    ]
+
+    //依赖第三方配置
+    dependencies = [
+            //阿里路由框架
+            "arouter_api"                                       : "com.alibaba:arouter-api:1.5.0",
+            "arouter_compiler"                               : "com.alibaba:arouter-compiler:1.2.2",
+            //rxjava
+            "rxjava"                                               : "io.reactivex.rxjava2:rxjava:2.2.3",
+            "rxandroid"                                          : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            //lifecycle
+            "lifecycle-runtime"                                : "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1",
+            "lifecycle-common"                               : "androidx.lifecycle:lifecycle-common-java8:2.3.1",
+            //viewModel
+            "lifecycle-lifecycle-viewmodel"               : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1",
+            //fragment-ktx
+            "fragment-ktx"                                     : "androidx.fragment:fragment-ktx:1.3.1",
+            // liveData
+            "lifecycle-livedata"                                : "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1",
+            "unpeek-livedata"                                 : "com.kunminx.arch:unpeek-livedata:6.1.0-beta1",
+            //retrofit
+            "retrofit"                                              : "com.squareup.retrofit2:retrofit:2.9.0",
+            "converter-gson"                                  : "com.squareup.retrofit2:converter-gson:2.9.0",
+            "PersistentCookieJar"                            : "com.github.franmontiel:PersistentCookieJar:v1.0.1",
+            "retrofit-url-manager"                           : "me.jessyan:retrofit-url-manager:1.4.0",
+            "logging-interceptor"                            : "com.squareup.okhttp3:logging-interceptor:4.7.2",
+            //MMkv
+            "mmkv"                                               : "com.tencent:mmkv:1.2.10",
+            //沉浸状态栏
+            "immersionbar"                                    : "com.gyf.immersionbar:immersionbar:3.0.0",
+            //glide图片加载
+            "glide"                                                 : "com.github.bumptech.glide:glide:4.12.0",
+            "glide-compiler"                                   : "com.github.bumptech.glide:compiler:4.12.0",
+            'glide-transfer'                                     : 'jp.wasabeef:glide-transformations:4.3.0',
+            //适配框架
+            "autosize"                                            : "me.jessyan:autosize:1.2.1",
+            //BaseAdapter
+            "BaseRecyclerViewAdapterHelper"          : "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4",
+            //管理界面状态库
+            "loadsir"                                               : "com.kingja.loadsir:loadsir:1.3.8",
+            //防崩溃
+            "customactivityoncrash"                        : "cat.ereza:customactivityoncrash:2.3.0",
+            //腾讯三方功能库
+            "qmui"                                                 : "com.qmuiteam:qmui:2.0.0-alpha10",
+            "annotation"                                         : "androidx.annotation:annotation:1.2.0",
+            //EventBus
+            "eventbus"                                           : "org.greenrobot:eventbus:3.2.0",
+            //加载动画
+            "Android-SpinKit"                                 : "com.github.ybq:Android-SpinKit:1.4.0",
+            //titleBar
+            "titlebar"                                              : "com.wuhenzhizao:titlebar:1.2.0",
+            //权限
+            "rxpermissions"                                    : "com.github.tbruyelle:rxpermissions:0.10.2",
+            //列表刷新加载
+            "refresh-layout"                                    : "com.scwang.smart:refresh-layout-kernel:2.0.3",
+            "refresh-header"                                   : "com.scwang.smart:refresh-header-classics:2.0.3",
+            "refresh-footer"                                     : "com.scwang.smart:refresh-footer-classics:2.0.3",
+            //BackgroundLibrary
+            "BackgroundLibrary"                              : "com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.2",
+            //AndroidViewAnimations
+            "androidanimations"                              : "com.daimajia.androidanimations:library:2.4@aar",
+            //Lottie 动画
+            'lottie'                                                   : 'com.airbnb.android:lottie:3.5.0',
+            //matisse 换肤
+            'matisse'                                               : 'com.zhihu.android:matisse:0.5.3-beta3',
+            //ConsecutiveScroller
+            'ConsecutiveScroller'                              : 'com.github.donkingliang:ConsecutiveScroller:4.4.0',
+            //pager-bottom
+            'pager-bottom'                                      :  'me.majiajie:pager-bottom-tab-strip:2.4.0',
+            //FlycoTabLayout
+            'FlycoTabLayout'                                    : 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar',
+            //MaterialSearchBar
+            'searchBarView'                                     : 'com.github.mancj:MaterialSearchBar:0.8.5',
+            //rxBinding
+            "rxbinding"                                           : "com.jakewharton.rxbinding3:rxbinding:3.0.0",
+            //BannerViewPager
+            'BannerViewPager'                                 : 'com.github.zhpanvip:BannerViewPager:3.1.2'
+
+    ]
+
+}
